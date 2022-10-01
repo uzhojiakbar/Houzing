@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import './style.css'
+import { Featured } from "./design";
+import { Title, Componentname,Search } from "./design";
 
 class MyProperties extends Component {
     render() {
         return <>
-            <div className="Title">
-                <div className="componentname">My properties</div>
-                <div className="MainSearch">
-                    <input type="text" />
-                </div>
-            </div>
+            <Featured className="assdas">
+                <Title>
+                    <Componentname>My properties</Componentname>
+                    <Search  placeholder="Search" type="text" />
+                </Title>
+            </Featured>
         </>
     }
 }
