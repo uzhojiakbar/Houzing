@@ -50,4 +50,9 @@ text-transform:capitalize;
 }
 `
 
+export const Table = styled.table`
+display:flex;
+border:1px solid black;
+`
+
 export { Featured }
