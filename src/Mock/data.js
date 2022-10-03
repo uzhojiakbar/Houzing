@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import img from '../Assets/icons/imgs/Back.png'
 let Data = [
     { id: 1,
@@ -37,7 +36,20 @@ let Data = [
         status: 'Pending',
         view: '5933',
     },
+    { id: 4,
+        img: img,
+        name: 'New Apartment Nice Wiew',
+        country: 'Quincy St, Brooklyn, NY, USA',
+        price: '$2,800/mo',
+        price2: '$7,500/mo',
+        featured: true,
+        forsale: true,
+        Data: '30 December 2022',
+        status: 'Pending',
+        view: '5933',
+    },
 ]
+
 
 
 export default Data;

@@ -4,10 +4,14 @@ let Featured = styled.div`
     flex-direction:column;
     width:1360px;
     margin: 10px auto;
+
     padding:5px;
         *::selection{
             background-color:teal;
             color:white;    
+        }
+        *{
+            transition:.5s;
         }
 `
 export const Title = styled.div`
@@ -53,9 +57,15 @@ export const Search = styled.input`
 export const Table = styled.table`
     display:flex;
     flex-direction: column;
-    border:1px solid black;
     width:85%;
+    height: 420px;
     margin:50px auto;
+    background: #FFFFFF;
+    border: 1px solid #E6E9EC;
+    box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
+    border-radius: 3px;
+    padding:10px 10px;
+    overflow:auto;
 `
 
 export const Thead = styled.thead`
@@ -63,6 +73,14 @@ export const Thead = styled.thead`
     grid-template-columns: 4fr repeat(4,1.2fr) ;
     padding:5px;
     gap:2px;
+    align-items: center;
+    justify-content:center;
+    position: sticky;
+    top:-10px;
+    background-color: white;
+    z-index:9999;
+    min-height:40px;
+    max-height:700px;
 `
 export const Th = styled.th`
     font-family: 'Montserrat';
@@ -216,5 +234,19 @@ export const ListingTxt = styled.div`
         }
 `
 
+
+export const NoResult = styled.div`
+
+display:flex;
+align-items:center;
+justify-content: center;
+height:150%;
+flex-direction:column;
+p{
+    color:black;
+    font-family:cursive;
+    font-size:20px;
+}
+`
 
 export { Featured }
